@@ -1,1 +1,57 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #050505;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, button, label {
+  font-family: 'Barlow', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* --- STIL GLOBAL BUTON GALBEN --- */
+.btn-yellow {
+  background-color: #D4AF37; /* Galben Gold */
+  color: black;              /* Text Negru pentru contrast */
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;        /* Usor rotunjit sau 0px daca vrei sharp */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover Effect: Se face ALB */
+.btn-yellow:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transform: translateY(-2px); /* Mica miscare in sus */
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Varianta pentru butoane secundare (Delete/Cancel) - Rosu */
+.btn-danger {
+  background-color: #331111;
+  color: #ff4444;
+  border: 1px solid #550000;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+.btn-danger:hover {
+  background-color: #cc0000;
+  color: white;
+}
